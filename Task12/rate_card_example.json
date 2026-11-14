@@ -1,0 +1,17 @@
+{
+  "regular": {
+    "base_rate": "30.00",
+    "fat_step_value": "0.40",
+    "snf_step_value": "0.30"
+  },
+  "april_june": {
+    "base_rate": "32.00",
+    "fat_step_value": "0.45",
+    "snf_step_value": "0.30"
+  },
+  "bonus": {
+    "threshold_litres_exclusive": "500",
+    "rupees_per_litre": "0.50"
+  },
+  "rounding": "ROUND_HALF_UP to nearest 0.1 percentage step and nearest paisa"
+}
