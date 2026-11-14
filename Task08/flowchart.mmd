@@ -1,0 +1,20 @@
+flowchart TD
+    A([START]) --> B[/Read farmer ID, litres, fat, SNF, shift/]
+    B --> C{Farmer ID and shift valid?}
+    C -- No --> X[/Display invalid identity or shift/]
+    C -- Yes --> D{Litres finite and greater than 0?}
+    D -- No --> Y[/Display invalid quantity/]
+    D -- Yes --> E{Fat between 2.0 and 7.0?}
+    E -- No --> Z[/Display invalid fat/]
+    E -- Yes --> F{SNF finite and non-negative?}
+    F -- No --> W[/Display invalid SNF/]
+    F -- Yes --> G[Calculate fat and SNF steps]
+    G --> H[Calculate rate per litre]
+    H --> I[Calculate exact delivery value and add to farmer's total]
+    I --> J[Round ten-day farmer total once to paise at settlement]
+    J --> L[/Display rate and ten-day total/]
+    X --> K([END])
+    Y --> K
+    Z --> K
+    W --> K
+    L --> K
