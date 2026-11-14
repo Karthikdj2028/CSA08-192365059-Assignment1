@@ -7,13 +7,13 @@
 **Nature:** Individual  
 **Platform:** macOS  
 **Python command:** `python3`  
-**Python version:** Enter the exact version printed by `python3 --version` on your Mac.
+**Python version used:** Python 3.13.15
 
 **GitHub repository:** https://github.com/Karthikdj2028/CSA08-192365059-Assignment1
 
 ## About this project
 
-This assignment is written using beginner-friendly Python: variables, named constants, if/else, loops, lists, tuples, dictionaries, functions, try/except, simple assert tests and the Decimal module. It does not require classes, constructors or third-party libraries.
+This assignment uses beginner-friendly Python: variables, named constants, if/else, loops, lists, tuples, dictionaries, functions, try/except, simple assert tests and the Decimal module. It does not require classes, constructors or third-party libraries.
 
 There is one folder for each task:
 
@@ -32,7 +32,14 @@ There is one folder for each task:
 | Task11 | Final design recommendation and complexity analysis |
 | Task12 | Seasonal rate cards and ten-day bonus |
 
-Each task contains its own README and an `evidence/` folder. Add your own screenshots after you execute the task.
+Each task folder contains its Python source or written analysis, a task README and an `evidence/` directory with execution evidence.
+
+## Python and libraries
+
+- Python 3.13.15 on macOS, run with `python3`.
+- No third-party packages are required.
+- Standard-library modules used include `decimal`, `math`, `sys`, `time` and `unittest`.
+- `requirements.txt` is included as requested; no external packages are needed.
 
 ## Setup on Mac
 
@@ -43,8 +50,6 @@ python3 --version
 git --version
 pwd
 ```
-
-No third-party packages need to be installed. The project uses only Python's standard library. `requirements.txt` is included as requested.
 
 ## Run each task
 
@@ -71,9 +76,9 @@ Run commands from the project root folder:
 | 12 | `python3 Task12/demo_seasonal.py` |
 | 12 | `python3 Task12/test_seasonal.py` |
 
-Task05 and the interactive Task09 calculator request keyboard input. For Task05, enter valid values and also try inputs such as `eight` and `8,5` to see how invalid values are handled.
+Task05 and the interactive Task09 calculator request keyboard input. Task05 accepts a decimal point (for example `8.5`); try invalid entries such as `eight` and `8,5` to observe the error handling.
 
-For Task02, capture an interactive Python session as well:
+For Task02, the assignment also asks for an interactive Python session:
 
 ```bash
 python3
@@ -83,44 +88,30 @@ At the `>>>` prompt, enter the type and arithmetic expressions listed in the ass
 
 ## Evidence and report
 
-1. Execute each task yourself.
-2. Compare its output with the assignment's expected output.
-3. Capture the terminal using **Shift + Command + 4** on Mac.
-4. Save the screenshot inside the matching task's `evidence/` folder.
-5. Record your own timings from Task10 in the report. They vary between computers.
-6. Enter the exact Python version and this repository link on the report cover page.
-7. Use `EVIDENCE_CHECKLIST.md` to check every screenshot requirement.
+The task-specific screenshots and supporting files are stored in the corresponding `TaskXX/evidence/` folders. Task08 also includes its flowchart. Task11 is a written evaluation, so its main deliverable is `Task11/design_decision.md`, not a separate Python program.
 
-The evidence folders contain placeholder notes only. They do not contain fabricated screenshots.
+Two evidence items should be checked before final portal submission:
 
-## Commit each task separately
+1. Task02: add a dedicated screenshot of the actual interactive `>>>` interpreter session. The current `task02_types_interpreter.png` is the script output, not the interactive prompt.
+2. Task05: the committed screenshot shows a valid data entry. Add a second screenshot showing rejection of invalid text (such as `eight` or `8,5`) followed by a successful correction.
 
-After completing a task and saving its evidence, commit that task separately. Example:
+Task10 includes the Mac benchmark and cache comparison screenshots. Timings depend on the local computer and Python build.
 
-```bash
-git add Task01
-git commit -m "feat(task01): document milk payment data model"
-git push origin main
-```
+## Commit history
 
-Repeat with Task02 through Task12, using the task-specific folders. At the end:
-
-```bash
-git status
-git log --oneline
-```
-
-The assignment requires at least one commit for each task. Do not upload all tasks in one final commit.
+Each task was committed and pushed separately, as required. The final Git log showed Task01 through Task12 as separate commits, the branch `main` up to date with `origin/main`, and a clean working tree.
 
 ## Final submission checks
 
-- [ ] Python version recorded.
-- [ ] All 12 tasks executed.
-- [ ] Genuine screenshots saved in every evidence folder.
-- [ ] Task10 timings measured on your Mac and entered in the report.
-- [ ] Separate commits for all 12 tasks pushed to GitHub.
-- [ ] Repository is public, or faculty has been added as a collaborator.
-- [ ] The GitHub URL appears on the report cover page and submission portal.
+- [x] Repository name is `CSA08-192365059-Assignment1`.
+- [x] Repository is public.
+- [x] Python version 3.13.15 is recorded.
+- [x] Tasks01–Task12 are present.
+- [x] Each task has a separate commit.
+- [x] Task10 benchmark and cache measurements are recorded in the evidence and report.
+- [ ] Add the dedicated Task02 interactive interpreter screenshot.
+- [ ] Add the Task05 invalid-input screenshot if the faculty expects the invalid attempt to be shown in evidence.
+- [ ] Enter the GitHub URL on the report cover page and submission portal.
 
 **Submission repository URL:** https://github.com/Karthikdj2028/CSA08-192365059-Assignment1
 
